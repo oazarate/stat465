@@ -40,7 +40,7 @@ t_matrices <- list()
 for(i in 1:(ncol(nucleotide_mat) - 1)){
   t_matrices[[i]] <- createSequenceMatrix(nucleotide_mat[, i:(i + 1)],
                                           possibleStates = c("A", "C", "G", "T"),
-                                          toRowProbs = FALSE)
+                                          toRowProbs = TRUE)
 }
 
 #extract_position_matrices()
